@@ -81,7 +81,7 @@
         </div>
         <div>
           <p ><strong>Team: </strong></p>
-          <input type="text" x-model="password1">
+          <input type="text" x-model="team1">
         </div>
         <br>
 
@@ -122,6 +122,7 @@
             <td  x-text="speler.email"></td>
             <td  x-text="speler.nationaliteit"></td>
             <td  x-text="speler.hashed_password"></td>
+            <td  x-text="speler.team"></td>
           </tr>
         </template>
       </table>
@@ -181,6 +182,7 @@
         var password1 = document.createElement("p");
         var leeftijd1 = document.createElement("p");
         var nationaliteit1 = document.createElement("p");
+        var team1 = document.createElement("p");
         let name = spelers
         voornaam.innerHTML = 'voornaam: ' + name.naam;
         mainContainer.appendChild(voornaam)
@@ -194,6 +196,8 @@
         mainContainer.appendChild(leeftijd1)
         nationaliteit1.innerHTML = 'nationaliteit: ' + name.nationaliteit;
         mainContainer.appendChild(nationaliteit1)
+        team1.innerHTML = 'team: ' + name.team;
+        mainContainer.appendChild(team)
     }
 </script>
 </html>
